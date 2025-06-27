@@ -84,6 +84,6 @@ return (
 <p>Use ArrowUp to increment and ArrowDown to decrement.</p>
 </div>
 );
-)
+
 
 export default CounterDisplay;

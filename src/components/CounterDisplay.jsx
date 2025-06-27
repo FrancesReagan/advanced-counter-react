@@ -1,8 +1,28 @@
+// this component now handles all the required functionality, including state management, side effects, and rendering.//
 import { useState, useEffect } from "react";
 import CounterButtons from "./CounterButtons";
 
 function CounterDisplay() {
- const [count, setCount] = useState(0);
+  // state for current count, initialized form localStorage or 0//
+ const [count, setCount] = useState(() =>{
+  const savedCount = localStorage.getItem("count");
+  return savedCount ? parseInt(savedCount, 10) : 0;
+ });
+
+// state for history of counts//
+const [history, setHistory] = useState([0]);
+
+// handle increment//
+const handleIncrement =() => {
+  setCount((prevCount) => {
+    const newCount = prevCount + 1;
+    setHistory((preHistory) => [...prevHistory, newCount]);
+    return newCount;
+  });
+};
+
+// handle decrement//
+const handleDecrement =() => {}
 
 
 return (

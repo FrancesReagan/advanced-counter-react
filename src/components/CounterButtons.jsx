@@ -1,23 +1,24 @@
 
+//  i choose to put all on counter display instead of here//
 
-function CounterButtons (){
+// function CounterButtons (){
  
 
 
-return (
-<>
-  <div>
+// return (
+// <>
+//   <div>
  
- <h1>Counter Buttons</h1>
- <button onClick </button>
- <button> onClick </button>
- <button> onClick </button>
+//  <h1>Counter Buttons</h1>
+//  <button onClick </button>
+//  <button> onClick </button>
+//  <button> onClick </button>
 
-  </div>
+//   </div>
 
-</>
-)
-}
+// </>
+// )
+// }
 
 
-export default CounterButtons;
+// export default CounterButtons;
